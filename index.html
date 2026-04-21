@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Dev Fullstack</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700;800&family=Syne:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">&lt;<span>Dev</span>/&gt;</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <i class="bi bi-terminal text-info"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">// sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">// skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">// projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tools">// ferramentas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">// contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="hero-tag">&#x25CF; disponível para projetos</div>
+            <h1 class="hero-name">
+              Dev.<br /><span class="highlight">Willians</span><br />Fullstack.
+            </h1>
+            <p class="hero-role">
+              Desenvolvedor <span>Fullstack</span> &amp; Entusiasta de
+              Automações
+            </p>
+            <p class="hero-desc">
+              Construindo interfaces modernas com Python no back-end, automações
+              inteligentes com n8n, e experiências visuais criadas no Figma.
+            </p>
+            <div class="hero-btns mt-4 d-flex gap-3 flex-wrap">
+              <a href="#projects" class="btn btn-accent">Ver Projetos</a>
+              <a href="#contact" class="btn btn-ghost">Entrar em Contato</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-code">
+              <div class="code-dots">
+                <div class="code-dot"></div>
+                <div class="code-dot"></div>
+                <div class="code-dot"></div>
+              </div>
+              <code>
+                <span class="code-line"
+                  ><span class="c-comment"># developer.py</span></span
+                >
+                <span class="code-line">&nbsp;</span>
+                <span class="code-line"
+                  ><span class="c-keyword">class</span>
+                  <span class="c-func">Developer</span>:</span
+                >
+                <span class="code-line c-indent"
+                  ><span class="c-var">name</span>
+                  <span class="c-comment">=</span>
+                  <span class="c-str">"Willians"</span></span
+                >
+                <span class="code-line c-indent"
+                  ><span class="c-var">stack</span>
+                  <span class="c-comment">=</span> [<span class="c-str"
+                    >"Python"</span
+                  >, <span class="c-str">"FastAPI"</span>,
+                  <span class="c-str">"Django"</span>]</span
+                >
+                <span class="code-line c-indent"
+                  ><span class="c-var">tools</span>
+                  <span class="c-comment">=</span> [<span class="c-str"
+                    >"n8n"</span
+                  >, <span class="c-str">"Figma"</span>,
+                  <span class="c-str">"Git"</span>]</span
+                >
+                <span class="code-line">&nbsp;</span>
+                <span class="code-line c-indent"
+                  ><span class="c-keyword">def</span>
+                  <span class="c-func">status</span>(<span class="c-var"
+                    >self</span
+                  >):</span
+                >
+                <span class="code-line c-indent2"
+                  ><span class="c-keyword">return</span> {</span
+                >
+                <span class="code-line c-indent2"
+                  >&nbsp;&nbsp;<span class="c-str">"open_to_work"</span>:
+                  <span class="c-num">True</span>,</span
+                >
+                <span class="code-line c-indent2"
+                  >&nbsp;&nbsp;<span class="c-str">"learning"</span>:
+                  <span class="c-num">True</span></span
+                >
+                <span class="code-line c-indent2">}</span>
+                <span class="code-line">&nbsp;</span>
+                <span class="code-line"
+                  ><span class="c-var">dev</span>
+                  <span class="c-comment">=</span>
+                  <span class="c-func">Developer</span>()</span
+                >
+                <span class="code-line"
+                  ><span class="c-func">print</span>(<span class="c-var"
+                    >dev</span
+                  >.<span class="c-func">status</span>())<span
+                    class="cursor"
+                  ></span
+                ></span>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 fade-in">
+            <p class="section-label">01 // sobre mim</p>
+            <h2 class="section-title">Quem sou<br />eu?</h2>
+            <p style="color: #8899aa; font-size: 0.87rem; line-height: 1.9">
+              Sou um desenvolvedor em formação, focado em desenvolvimento web
+              fullstack com Python. Tenho paixão por criar soluções que unem
+              back-end robusto a interfaces cuidadosamente desenhadas no Figma.
+            </p>
+            <p
+              class="mt-3"
+              style="color: #8899aa; font-size: 0.87rem; line-height: 1.9"
+            >
+              Além do código, mergulho no mundo das automações com n8n para
+              tornar processos mais eficientes. Acredito que a melhor tecnologia
+              é a que resolve problemas reais de forma elegante.
+            </p>
+          </div>
+          <div class="col-lg-6 fade-in">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="stat-box">
+                  <div class="stat-number">01</div>
+                  <div class="stat-label">ano estudando</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <div class="stat-number">5+</div>
+                  <div class="stat-label">projetos pessoais</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <div class="stat-number">4</div>
+                  <div class="stat-label">tecnologias</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box">
+                  <div class="stat-number">∞</div>
+                  <div class="stat-label">vontade de aprender</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <p class="section-label fade-in">02 // habilidades</p>
+        <h2 class="section-title fade-in">Tech<br />Stack.</h2>
+        <div class="row g-5">
+          <div class="col-md-4 fade-in">
+            <p class="skill-group-title">
+              <i class="bi bi-server me-2"></i>Back-end
+            </p>
+            <div>
+              <span class="skill-badge"
+                ><i class="bi bi-filetype-py"></i> Python</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-lightning-charge"></i> FastAPI</span
+              >
+              <span class="skill-badge"><i class="bi bi-box"></i> Django</span>
+              <span class="skill-badge"
+                ><i class="bi bi-database"></i> PostgreSQL</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-database-fill"></i> SQLite</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-shield"></i> REST APIs</span
+              >
+            </div>
+          </div>
+          <div class="col-md-4 fade-in">
+            <p class="skill-group-title">
+              <i class="bi bi-layout-text-window me-2"></i>Front-end
+            </p>
+            <div>
+              <span class="skill-badge"
+                ><i class="bi bi-filetype-html"></i> HTML5</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-filetype-css"></i> CSS3</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-filetype-js"></i> JavaScript</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-bootstrap"></i> Bootstrap</span
+              >
+              <span class="skill-badge"><i class="bi bi-brush"></i> Figma</span>
+              <span class="skill-badge"
+                ><i class="bi bi-phone"></i> Responsivo</span
+              >
+            </div>
+          </div>
+          <div class="col-md-4 fade-in">
+            <p class="skill-group-title">
+              <i class="bi bi-gear-wide-connected me-2"></i>DevOps &amp;
+              Automações
+            </p>
+            <div>
+              <span class="skill-badge"><i class="bi bi-git"></i> Git</span>
+              <span class="skill-badge"
+                ><i class="bi bi-github"></i> GitHub</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-diagram-3"></i> n8n</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-box-seam"></i> Docker</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-terminal"></i> CLI / Bash</span
+              >
+              <span class="skill-badge"
+                ><i class="bi bi-cloud"></i> Deploy</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <p class="section-label fade-in">03 // projetos</p>
+        <h2 class="section-title fade-in">O que já<br />construí.</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <i class="bi bi-arrow-up-right text-secondary"></i>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Dashboard Financeiro</h3>
+                <p class="project-desc">
+                  Sistema web para controle de receitas e despesas com gráficos
+                  interativos e autenticação de usuários.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-py">Python</span>
+                <span class="tag tag-html">Django</span>
+                <span class="tag tag-db">PostgreSQL</span>
+                <span class="tag tag-js">Chart.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon"><i class="bi bi-robot"></i></div>
+                <i class="bi bi-arrow-up-right text-secondary"></i>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Bot de Notificações</h3>
+                <p class="project-desc">
+                  Automação com n8n que monitora APIs externas e envia alertas
+                  personalizados via Telegram e e-mail.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-n8n">n8n</span>
+                <span class="tag tag-api">API REST</span>
+                <span class="tag tag-py">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon"><i class="bi bi-cart3"></i></div>
+                <i class="bi bi-arrow-up-right text-secondary"></i>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">E-commerce Simples</h3>
+                <p class="project-desc">
+                  Loja virtual com catálogo de produtos, carrinho e painel
+                  admin. Layout criado no Figma antes do código.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-html">FastAPI</span>
+                <span class="tag tag-js">JavaScript</span>
+                <span class="tag tag-db">SQLite</span>
+                <span class="tag tag-api">Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="bi bi-clipboard2-data"></i>
+                </div>
+                <i class="bi bi-arrow-up-right text-secondary"></i>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Scraper de Dados</h3>
+                <p class="project-desc">
+                  Script Python para coleta automatizada de dados públicos com
+                  exportação para CSV e visualização rápida.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-py">Python</span>
+                <span class="tag tag-py">BeautifulSoup</span>
+                <span class="tag tag-db">CSV</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon"><i class="bi bi-kanban"></i></div>
+                <i class="bi bi-arrow-up-right text-secondary"></i>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Task Manager</h3>
+                <p class="project-desc">
+                  App de gerenciamento de tarefas com drag-and-drop, tags e
+                  sistema de prioridades. Interface desenhada no Figma.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-html">HTML/CSS</span>
+                <span class="tag tag-js">JavaScript</span>
+                <span class="tag tag-api">Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 fade-in">
+            <div class="project-card">
+              <div class="project-header">
+                <div class="project-icon"><i class="bi bi-link-45deg"></i></div>
+                <i class="bi bi-arrow-up-right text-secondary"></i>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">API de Encurtador</h3>
+                <p class="project-desc">
+                  Microserviço REST para encurtamento de URLs com contagem de
+                  acessos e expiração configurável.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-html">FastAPI</span>
+                <span class="tag tag-db">Redis</span>
+                <span class="tag tag-api">REST</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section id="tools">
+      <div class="container">
+        <p class="section-label fade-in">04 // ferramentas</p>
+        <h2 class="section-title fade-in">No meu<br />dia a dia.</h2>
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">🐍</span>
+              <div class="tool-name">Python</div>
+              <div class="tool-desc">linguagem principal</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">⚡</span>
+              <div class="tool-name">n8n</div>
+              <div class="tool-desc">automações</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">🎨</span>
+              <div class="tool-name">Figma</div>
+              <div class="tool-desc">design de UI</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">🌿</span>
+              <div class="tool-name">Git</div>
+              <div class="tool-desc">versionamento</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">🐙</span>
+              <div class="tool-name">GitHub</div>
+              <div class="tool-desc">repositórios</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">🗄️</span>
+              <div class="tool-name">PostgreSQL</div>
+              <div class="tool-desc">banco de dados</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">📦</span>
+              <div class="tool-name">Docker</div>
+              <div class="tool-desc">containers</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2 fade-in">
+            <div class="tool-card">
+              <span class="tool-icon">🖥️</span>
+              <div class="tool-name">VS Code</div>
+              <div class="tool-desc">editor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <p class="section-label text-center fade-in">05 // contato</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 fade-in">
+            <div class="contact-card">
+              <h2 class="contact-heading">Vamos construir<br />algo juntos?</h2>
+              <p class="contact-sub">
+                Estou aberto a oportunidades, freelas e colaborações. Me manda
+                uma mensagem!
+              </p>
+              <div>
+                <a href="mailto:seuemail@email.com" class="social-link">
+                  <i class="bi bi-envelope"></i> seuemail@email.com
+                </a>
+                <a
+                  href="https://github.com/seuusuario"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="bi bi-github"></i> github.com/seuusuario
+                </a>
+                <a
+                  href="https://linkedin.com/in/seuusuario"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <i class="bi bi-linkedin"></i> linkedin.com/in/seuusuario
+                </a>
+              </div>
+              <div class="mt-4">
+                <a href="mailto:seuemail@email.com" class="btn btn-accent">
+                  <i class="bi bi-send me-2"></i>Enviar mensagem
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>
+          Feito com <span>❤</span> e muito <span>Python</span> &nbsp;·&nbsp;
+          <span>2025</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
